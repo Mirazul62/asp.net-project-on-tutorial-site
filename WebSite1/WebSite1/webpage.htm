@@ -117,6 +117,7 @@ text-align: right;
 .btn {
   background-color: #31F4F4;
   border: none;
+  text-color: #F7F7FA;
   color: white;
   padding: 12px 16px;
   font-size: 20px;
@@ -125,7 +126,8 @@ text-align: right;
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: #1B3DBB;
+  text-color: #F7F7FA;
 }
 ts {
 color: white;
@@ -146,8 +148,68 @@ img {
   border-radius: 50%;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #1BEDF7;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #121539;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
-<title>TutorialSite</title>
+<title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -160,25 +222,67 @@ img {
 
 
 
-<h1><button class="btn"><i class="fa fa-home"  style="font-size: 0.73cm;"></i></button> <button class="btn"><i class="fa fa-bars"  style="font-size: 0.73cm;"></i></button><a href="file:///C:/Users/User/Desktop/webpage.htm" target="_blank"><pa>Tutor!al S!te</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<button class="btn"><i class=></i> Log In</button>
-<button class="btn"><i class=></i> Sign Up</button></h1>
+<h1><button class="btn"> <a href="http://localhost:59698/webpage.htm"> <i class="fa fa-home"  style="font-size: 0.73cm;"></i></a></button> <button class="btn"><i class="fa fa-bars"  style="font-size: 0.73cm;"></i></button><a href="file:///C:/Users/User/Desktop/webpage.htm" target="_blank"><pa>Tutor!al S!te</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<button class="btn"><i class=></i> <a href="http://localhost:59698/Login ">Log In</a></button>
+<button class="btn"><i class=></i><a href="http://localhost:59698/Registration"> Sign Up</a></button></h1>
 <div class="topnav"><input type="text" placeholder="Search.."></span></div>
-<div class="w3-container" style="background-color:Tomato;">
-  <input type="button" class="w3-button w3-round-large w3-black" value="School Level">
-  <button class="w3-button w3-round-large w3-black">College Level</button>
-  <button class="w3-button w3-round-large w3-black">Undergraduate Level</button>
-  <button class="w3-button w3-round-large w3-black">Postgraduate Level</button>
-  
-  
-</div>
 
-
+ 
+ <div class="navbar">
+  
+  <div class="dropdown">
+  <a href="http://localhost:59698/view">
+    <button class="dropbtn">JAVA
+      <i class="fa fa-caret-down"></i>
+    </button></a>
+   
+  </div> 
+  <div class="dropdown">
+  <a href="sql2.htm">
+    <button class="dropbtn">SQL
+      <i class="fa fa-caret-down"></i>
+    </button></a>
+    
+  </div>
+<div class="dropdown">
+<a href="http://localhost:59698/view">
+    <button class="dropbtn">ASP.NET
+      <i class="fa fa-caret-down"></i>
+    </button></a>   
+  </div> 
+<div class="dropdown">
+<a href="http://localhost:59698/view">
+    <button class="dropbtn">C++
+      <i class="fa fa-caret-down"></i>
+    </button></a>   
+  </div>
+<div class="dropdown">
+<a href="http://localhost:59698/view">
+    <button class="dropbtn">C
+      <i class="fa fa-caret-down"></i>
+    </button></a>   
+  </div>
+<div class="dropdown">
+<a href="html.htm">
+    <button class="dropbtn">HTML
+      <i class="fa fa-caret-down"></i>
+    </button></a>   
+  </div>
+<div class="dropdown">
+<a href="http://localhost:59698/view">
+    <button class="dropbtn">CSS
+      <i class="fa fa-caret-down"></i>
+    </button></a>   
+  </div>  
+</div>  
 <p id="rcorners1">
 <font class="italic"><pa1><Study for Everyone..</pa1><br><br><pa2> The aim of this website is to teach everyone free..</pa2><br><br><pa2> The following properties will the website have:</pa2><br><br><pa2>1. User can see the tutorial</pa2> <br><br><pa2>2. Users can upload their tutorial </pa2><br><br><pa2>3. Documentary on different topics will be found <br><br><pa2> 4. connection with other tutorial sites  </font>
 
 </p>
 
-<div style align="right" id="grad1" ><ts>about developer <br><br><div class="coloum"> Name: Mirazul Islam <br> CSE,KUET<br> Batch: 2k16<br>Country: Bangladesh<br> Phone number: 01798316162</ts><br><br><img src="IMG_0341.JPG"  width="200" height="150"<br></div></div>
+
+
+
+<div style align="right" id="grad1" ><ts>about developer <br><br><div class="coloum"> Name: Mirazul Islam <br> CSE,KUET<br> Batch: 2k16<br>Country: Bangladesh<br> Phone number: 01798316162</ts><br><br><img src="IMG_0341.JPG"  width="200" height="150"<br></div></div>
 
 
 <div  class="pagination" >

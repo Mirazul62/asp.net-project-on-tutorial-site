@@ -1,0 +1,233 @@
+<html>
+<header>
+   <h2><a href="file:///C:/Users/User/Desktop/webpage.htm">Tutor!al S!te</a><h2>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="script.js"></script>
+</header>
+<body>
+<nav style="width:100%">
+  <ul>
+    <li><a href="#section-1"><font color=#050D45><b>SQL-Home</b></font></a></li>
+    <li><a href="#section-2"><font color=#050D45><b>SQL-Syntex</b></font> </a></li>
+    <li><a href="#section-3"><font color=#050D45><b>SQL - CREATE Table</b></a></li>
+    <li><a href="#section-4"><font color=#050D45><b>SQL - DROP Table</b></a></li>
+    <li><a href="#section-5"><font color=#050D45><b>SQL - INSERT Query</b></a></li>
+    <li><a href="#section-6"><font color=#050D45><b>SQL - SELECT Query</b></a></li>
+    <li><a href="#section-7"><font color=#050D45><b>SQL - UPDATE Query</b></a></li>
+    <li><a href="#section-8"><font color=#050D45><b>SQL - LIKE Clause</b></a></li>
+    <li><a href="#section-9"><font color=#050D45><b>SQL - ORDER BY Clause</b></a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="section-1">
+    <h1><center><font color=#050D45><b>SQL Tutorial</b></font></center></h1>
+	<div align="right">
+    <a href="#section-2">Next</a>
+</div>
+    <p>SQL is a database computer language designed for the retrieval and management of data in a relational database. SQL stands for Structured Query Language. This tutorial will give you a quick start to SQL. It covers most of the topics required for a basic understanding of SQL and to get a feel of how it works.</p>
+ <div align="right">
+    <a href="file:///C:/Users/User/Desktop/webpage.htm">Back to the HomePage</a>
+</div>
+ </section>
+  <section id="section-2">
+     <h1><center><font color=#050D45><b>SQL-Syntex</b></font></center></h1>
+	 <div align="left">
+    <a href="#section-1">previous</a>
+</div>
+<div align="right">
+    <a href="#section-3">Next</a>
+</div>
+  <p>SQL is followed by a unique set of rules and guidelines called Syntax. This tutorial gives you a quick start with SQL by listing all the basic SQL Syntax.
+
+All the SQL statements start with any of the keywords like SELECT, INSERT, UPDATE, DELETE, ALTER, DROP, CREATE, USE, SHOW and all the statements end with a semicolon (;).
+
+The most important point to be noted here is that SQL is case insensitive, which means SELECT and select have same meaning in SQL statements. Whereas, MySQL makes difference in table names. So, if you are working with MySQL, then you need to give table names as they exist in the database.</p>
+   <h1><font color=#050D45><b>Various Syntax in SQL</b></font></h1></br>
+    <h1><font color=#050D45><b>SQL SELECT Statement</b></font></h1>
+	<p>SELECT column1, column2....columnN</br>
+     FROM   table_name;</p></br>
+	 
+	<h1><font color=#050D45><b>SQL WHERE Clause</b></font></h1>
+	<p>SELECT column1, column2....columnN</br>
+FROM   table_name</br>
+WHERE  CONDITION;</p></br>
+    <h1><font color=#050D45><b>SQL CREATE TABLE Statement</b></font></h1>
+	
+	<p>CREATE TABLE table_name(</br>
+column1 datatype,</br>
+column2 datatype,</br>
+column3 datatype,</br>
+.....</br>
+columnN datatype,</br>
+PRIMARY KEY( one or more columns )</br>
+);</p></br>
+<div align="right">
+    <a href="file:///C:/Users/User/Desktop/webpage.htm">Back to the HomePage</a>
+</div>
+   
+  </section>
+  <section id="section-3">
+    <h1><center><font color=#050D45><b>SQL - CREATE Table</b></font></center></h1>
+	<div align="left">
+    <a href="#section-2">Previous</a>
+</div>
+<div align="right">
+    <a href="#section-4">Next</a>
+</div>
+    <p>The basic syntax of the CREATE TABLE statement is as follows −</p>
+	<p>CREATE TABLE table_name(</br>
+column1 datatype,</br>
+column2 datatype,</br>
+column3 datatype,</br>
+.....</br>
+columnN datatype,</br>
+PRIMARY KEY( one or more columns )</br>
+);</p></br>
+    <h1><font color=#050D45><b>Example</b></font></h1>
+	<p>
+	SQL> CREATE TABLE CUSTOMERS(</br>
+   ID   INT              NOT NULL,</br>
+   NAME VARCHAR (20)     NOT NULL,</br>
+   AGE  INT              NOT NULL,</br>
+   ADDRESS  CHAR (25) ,</br>
+   SALARY   DECIMAL (18, 2),       </br>
+   PRIMARY KEY (ID)</br>
+);</p>
+	
+	<div align="right">
+    <a href="file:///C:/Users/User/Desktop/webpage.htm">Back to the HomePage</a>
+</div>
+  </section>
+  <section id="section-4">
+    <h1><center><font color=#050D45><b>SQL - DROP or DELETE Table</b></font></center></h1>
+	<div align="left">
+    <a href="#section-3">Previous</a>
+</div>
+<div align="right">
+    <a href="#section-5">Next</a>
+</div>
+    <p>The SQL DROP TABLE statement is used to remove a table definition and all the data, indexes, triggers, constraints and permission specifications for that table.</p>
+	<h1><font color=#050D45><b>Syntex</b></font></h1>
+	<p>DROP TABLE table_name;</p>
+	<div align="right">
+    <a href="file:///C:/Users/User/Desktop/webpage.htm">Back to the HomePage</a>
+</div>
+  </section>
+  <section id="section-5">
+    <h1><center><font color=#050D45><b>SQL - INSERT Query</b></font></center></h1>
+	<div align="left">
+    <a href="#section-4">Previous</a>
+</div>
+<div align="right">
+    <a href="#section-6">Next</a>
+</div>
+    <p>The SQL INSERT INTO Statement is used to add new rows of data to a table in the database.</p>
+	<h1><font color=#050D45><b>Syntex</b></font></h1>
+	<p>INSERT INTO TABLE_NAME (column1, column2, column3,...columnN) </br> 
+VALUES (value1, value2, value3,...valueN);</p>
+ <h1><font color=#050D45><b>Example</b></font></h1>
+ <p>INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)</br>
+VALUES (1, 'Ramesh', 32, 'Ahmedabad', 2000.00 );</p>
+<div align="right">
+    <a href="file:///C:/Users/User/Desktop/webpage.htm">Back to the HomePage</a>
+</div>
+  </section>
+  <section id="section-6">
+ 
+    <h1><center><font color=#050D45><b>SQL - SELECT Query</b></font></center></h1>
+	<div align="left">
+    <a href="#section-5">previous</a>
+</div>
+<div align="right">
+    <a href="#section-7">Next</a>
+</div>
+	<p>The SQL SELECT statement is used to fetch the data from a database table which returns this data in the form of a result table. These result tables are called result-sets.</p>
+	<h1><font color=#050D45><b>Syntex</b></font></h1>
+	<p>The basic syntax of the SELECT statement is as follows −</p>
+	<p>SELECT column1, column2, columnN FROM table_name;</p>
+	<p>Here, column1, column2... are the fields of a table whose values you want to fetch. If you want to fetch all the fields available in the field, then you can use the following syntax.
+
+    </br></br>
+	SELECT * FROM table_name;</p>
+	<div align="right">
+    <a href="file:///C:/Users/User/Desktop/webpage.htm">Back to the HomePage</a>
+</div>
+    
+  </section>
+  
+   <h1><center><font color=#050D45><b>SQL - UPDATE Query</b></font></center></h1>
+   <section id="section-7">
+  <div align="left">
+    <a href="#section-6">previous</a>
+</div>
+<div align="right">
+    <a href="#section-8">Next</a>
+</div>
+   <p>The SQL UPDATE Query is used to modify the existing records in a table. You can use the WHERE clause with the UPDATE query to update the selected rows, otherwise all the rows would be affected.</p>
+   <h1><font color=#050D45><b>Syntex</b></font></h1>
+   <p>The basic syntax of the UPDATE query with a WHERE clause is as follows −</p>
+   <p>UPDATE table_name</br>
+SET column1 = value1, column2 = value2...., columnN = valueN</br>
+WHERE [condition];</p>
+ <h1><font color=#050D45><b>Example</b></font></h1>
+ <p>SQL> UPDATE CUSTOMERS</br>
+SET ADDRESS = 'Pune'</br>
+WHERE ID = 6;</p>
+<div align="right">
+    <a href="file:///C:/Users/User/Desktop/webpage.htm">Back to the HomePage</a>
+</div>
+ </section>
+  <section id="section-8">
+  
+    <h1><center><font color=#050D45><b>SQL - UPDATE Query</b></font></center></h1>
+<div align="left">
+    <a href="#section-7">previous</a>
+</div>
+<div align="right">
+    <a href="#section-9">Next</a>
+</div>   
+   <p>The SQL LIKE clause is used to compare a value to similar values using wildcard operators.</p>
+	 <h1><font color=#050D45><b>Syntex</b></font></h1>
+	 <p>The basic syntax of % and _ is as follows −</p>
+	 <p>SELECT FROM table_name</br>
+WHERE column LIKE 'XXXX%'</p>
+</br>
+<p>OR</p>
+</br>
+<p>SELECT FROM table_name</br>
+WHERE column LIKE '%XXXX%'</p>
+<div align="right">
+    <a href="file:///C:/Users/User/Desktop/webpage.htm">Back to the HomePage</a>
+</div>
+
+	 
+  </section>
+  <section id="section-9">
+
+    <h1><center><font color=#050D45><b>SQL - UPDATE Query</b></font></center></h1>
+ <div align="left">
+    <a href="#section-8">Previous</a>
+</div>  
+  <p>The SQL ORDER BY clause is used to sort the data in ascending or descending order, based on one or more columns.</p>
+   <h1><font color=#050D45><b>Syntex</b></font></h1>
+   <p>The basic syntax of the ORDER BY clause is as follows −</p>
+   <p>SELECT column-list </br>
+FROM table_name </br>
+[WHERE condition] </br>
+[ORDER BY column1, column2, .. columnN] [ASC | DESC];</P>   
+<h1><font color=#050D45><b>Example</b></font></h1>
+<p>SQL> SELECT * FROM CUSTOMERS</br>
+   ORDER BY NAME, SALARY;</p>
+   <div align="left">
+    <a href="#section-1">Back to the Top</a>
+</div>
+   <div align="right">
+    <a href="file:///C:/Users/User/Desktop/webpage.htm">Back to the HomePage</a>
+</div>
+
+   
+  </section>
+</main>
+</body>
+</head>
