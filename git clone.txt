@@ -1,0 +1,12 @@
+
+if shift from one git acc to another git acc. instance will be change. to get back the instance:
+
+git clone https://mirazul062@github.com/JulyBusinessServices/Enrollment.git
+git clone https://username@github.com/repositoryname
+
+git remote -v
+git remote rm origin
+git remote add origin https://mirazul062@github.com/JulyBusinessServices/Enrollment.git
+
+git remote add origin https://mirazul062@github.com/JulyBusinessServices/JobScheduler.git
+https://github.com/JulyBusinessServices/JobScheduler.git
